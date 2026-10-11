@@ -1,0 +1,258 @@
+export const reportsData = [
+  {
+    id: "informe-1",
+    slug: "balance-diez-anos-acuerdo-de-paz",
+    number: "Informe 01",
+    category: "Investigación & Balance",
+    categoryColor: "gold",
+    title: "10 Años del Acuerdo de Paz (2016-2026): Radiografía de una década de transformaciones, balances y deudas históricas",
+    subtitle: "Una investigación exhaustiva sobre el estado de cumplimiento de los seis puntos del Acuerdo de La Habana, los avances del Instituto Kroc y los retos estructurales del Estado colombiano.",
+    author: "Unidad Investigativa - La Trinidad Periodística",
+    date: "Octubre de 2026",
+    readTime: "8 min de lectura",
+    coverImage: "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1200&q=80",
+    coverCaption: "Monumento a las víctimas y balance de la década de paz. Foto: Archivo Trinidad Periodística / Licencia CC.",
+    lead: "A una década de la firma del histórico Acuerdo Final para la Terminación del Conflicto y la Construcción de una Paz Estable y Duradera en 2016, Colombia atraviesa un momento crucial de evaluación. ¿Cuánto se ha cumplido realmente y cuáles son las deudas que aún persisten en los territorios más golpeados por la violencia?",
+    stats: [
+      { label: "Implementación General", value: "54%", desc: "Avance según el Instituto Kroc (2026)" },
+      { label: "Punto 3 (Fin Conflicto)", value: "78%", desc: "Dejación de armas y reincorporación base" },
+      { label: "Punto 1 (Reforma Rural)", value: "34%", desc: "Mayor rezago estructural de tierras" },
+      { label: "Puntos JEP y Víctimas", value: "62%", desc: "Procesos de verdad y medidas restaurativas" }
+    ],
+    sections: [
+      {
+        heading: "1. El punto de partida: La promesa de transformación estructural",
+        content: `El Acuerdo de Paz suscrito en el Teatro Colón en noviembre de 2016 no fue únicamente un pacto de desarme; fue concebido como un plan integral de desarrollo para erradicar las causas estructurales que alimentaron más de 50 años de confrontación armada.
+
+Con seis puntos cardinales —Reforma Rural Integral (1), Participación Política (2), Fin del Conflicto (3), Solución al Problema de Drogas Ilícitas (4), Acuerdo sobre Víctimas (5), e Implementación y Verificación (6)— el documento trazó una hoja de ruta a 15 años (2016-2031). En este 2026, al cumplirse el hito de los diez años, el balance evidencia un contraste entre logros irreversibles y cuellos de botella institucionales.`
+      },
+      {
+        heading: "2. Datos duros: Qué se ha cumplido y qué sigue pendiente",
+        content: `Según los informes consolidados de verificación internacional, el Punto 3 (Cese al fuego, dejación de más de 13.000 armas y primeros pasos de reincorporación comunitaria) presentó el mayor grado de cumplimiento inicial. Más del 90% de los excombatientes acreditados se mantuvieron firmes en el proceso de paz, integrándose a proyectos productivos de café, confección, ecoturismo y educación.
+
+Sin embargo, el Punto 1 (Reforma Rural Integral) ha avanzado a un ritmo más lento: de los 3 millones de hectáreas a adjudicar gratuitamente y los 7 millones a formalizar en el Fondo de Tierras, apenas se ha superado el 34% de la meta material, principalmente por demoras en el catastro multipropósito y complejidades jurídicas en predios rurales.`
+      },
+      {
+        heading: "3. La convergencia informativa y el poder del lenguaje",
+        content: `El tratamiento periodístico durante estos diez años ha requerido un cambio profundo en el idioma y la narrativa de los medios. Hablar de 'firmantes de paz', 'justicia restaurativa' y 'enfoque territorial' implicó desmontar un vocabulario de confrontación bélica para construir una semántica orientada a la reconciliación y a la dignidad de las víctimas.`
+      }
+    ],
+    multimedia: {
+      type: "infographic",
+      title: "Infografía Interactiva: Estado de los 6 Puntos del Acuerdo (2016-2026)",
+      data: [
+        { punto: "Punto 1: Reforma Rural Integral", status: "34% Implementado", level: 34, color: "#e11d48" },
+        { punto: "Punto 2: Participación Política", status: "52% Implementado", level: 52, color: "#e5a93c" },
+        { punto: "Punto 3: Fin del Conflicto y D.A.", status: "78% Completado", level: 78, color: "#10b981" },
+        { punto: "Punto 4: Sustitución de Cultivos", status: "41% En Proceso", level: 41, color: "#f59e0b" },
+        { punto: "Punto 5: Víctimas, JEP y Verdad", status: "62% En Desarrollo", level: 62, color: "#06b6d4" },
+        { punto: "Punto 6: Mecanismos de Verificación", status: "58% Activo", level: 58, color: "#8b5cf6" }
+      ]
+    },
+    quote: {
+      text: "La paz no es la ausencia de conflicto, sino la presencia de oportunidades en el campo y la capacidad de resolver nuestras diferencias mediante la palabra y la justicia.",
+      author: "Dra. Elena Mosquera",
+      role: "Investigadora en Políticas Públicas y Paz Territorial"
+    },
+    sources: [
+      "Instituto Kroc de Estudios Internacionales de Paz - Informes de Matriz de Implementación (2016-2026).",
+      "Agencia para la Reincorporación y la Normalización (ARN) - Cifras oficiales de firmantes.",
+      "Misión de Verificación de las Naciones Unidas en Colombia.",
+      "Registro Único de Víctimas (RUV) - Unidad para las Víctimas."
+    ]
+  },
+  {
+    id: "informe-2",
+    slug: "voces-del-territorio-memoria-y-reincorporacion",
+    number: "Informe 02",
+    category: "Crónica & Testimonios",
+    categoryColor: "emerald",
+    title: "Ecos del Territorio: Las voces de víctimas, firmantes y liderazgos comunales que tejen la paz cotidiana",
+    subtitle: "Crónica humana desde los antiguos Espacios Territoriales y las comunidades campesinas del Guaviare, Cauca y Catatumbo.",
+    author: "Equipo Especial de Crónica - La Trinidad Periodística",
+    date: "Octubre de 2026",
+    readTime: "7 min de lectura",
+    coverImage: "https://images.unsplash.com/photo-1577495508048-b635879837f1?auto=format&fit=crop&w=1200&q=80",
+    coverCaption: "Líderes comunitarios en asamblea de reconciliación y soberanía alimentaria. Foto: Colectivo Memoria Viva.",
+    lead: "Más allá de los debates en los escritorios institucionales, la paz se suda y se construye en las veredas de Colombia. Recorrimos los territorios donde la memoria histórica se convirtió en cooperativas campesinas, escuelas rurales y proyectos de vida comunitaria.",
+    stats: [
+      { label: "Proyectos Productivos", value: "+4.200", desc: "Iniciativas comunitarias activas" },
+      { label: "Mujeres Líderes", value: "48%", desc: "Participación en cooperativas de paz" },
+      { label: "Testimonios Documentados", value: "150+", desc: "Relatos orales de perdón y memoria" }
+    ],
+    sections: [
+      {
+        heading: "1. Del fusil a la cosecha: El renacer de la tierra",
+        content: `En la vereda La Fila, a pocas horas del centro del país, el aroma de la pólvora fue reemplazado por el de café recién tostado. Don Manuel, un hombre de 52 años que pasó 23 en la guerrilla, hoy lidera una cooperativa agropecuaria junto a familias que en el pasado fueron desplazadas por el conflicto.
+
+'Al principio existía recelo mutuo', confiesa Manuel mientras inspecciona los granos maduros. 'El lenguaje nos dividía: unos eran llamados 'enemigos' y otros 'víctimas'. Cuando empezamos a compartir el mismo surco de tierra y a dialogar sin armas, comprendimos que el dolor era común y el anhelo de dignidad también'.`
+      },
+      {
+        heading: "2. Las mujeres como guardianas de la memoria y el tejido social",
+        content: `En los municipios PDET, las organizaciones de mujeres han sido el pilar más resistente. Han rescatado saberes ancestrales, creado círculos de sanación psicosocial y exigido con vehemencia la protección de los firmantes y defensores de derechos humanos frente a las nuevas amenazas de grupos armados residuales.`
+      },
+      {
+        heading: "3. La palabra como herramienta de reparación",
+        content: `Los encuentros cara a cara entre responsables y víctimas han demostrado que la reconciliación requiere verdad plena y un lenguaje sincero. No se trata del olvido, sino de la comprensión del daño para garantizar la no repetición.`
+      }
+    ],
+    multimedia: {
+      type: "audioPodcast",
+      title: "Podcast Exclusivo: 'Voces de la Reconciliación' (Episodio 1)",
+      description: "Escucha los testimonios directos de María Cardona (lideresa de víctimas del Cauca) y Jairo Benítez (firmante de paz y caficultor).",
+      duration: "12:45 min",
+      audioUrl: "https://actions.google.com/sounds/v1/ambiences/forest_birds.ogg"
+    },
+    quote: {
+      text: "Nos quitaron a nuestros seres queridos, pero no nos van a quitar la esperanza de ver a nuestros nietos crecer sin tener que correr al escuchar un disparo.",
+      author: "María Helena Cardona",
+      role: "Representante de la Mesa de Víctimas del Sur del País"
+    },
+    sources: [
+      "Testimonios orales en trabajo de campo territorial (2025-2026).",
+      "Asociación Nacional de Zonas de Reserva Campesina (ANZORC).",
+      "Red Nacional de Mujeres Comunales y Constructoras de Paz."
+    ]
+  },
+  {
+    id: "informe-3",
+    slug: "justicia-transicional-jep-verdad-y-lenguaje",
+    number: "Informe 03",
+    category: "Justicia & Transparencia",
+    categoryColor: "cyan",
+    title: "El Laberinto de la Verdad: La JEP, la justicia restaurativa y el rol del idioma en la no repetición",
+    subtitle: "Cómo el Sistema Integral para la Paz desentrañó los macrocasos más dolorosos del conflicto y resignificó la justicia en Colombia.",
+    author: "Mesa de Asuntos Jurídicos y Semiótica Periodística",
+    date: "Octubre de 2026",
+    readTime: "9 min de lectura",
+    coverImage: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1200&q=80",
+    coverCaption: "Audiencia pública de reconocimiento de verdad y responsabilidad ante la JEP. Foto: Jurisdicción Especial para la Paz.",
+    lead: "La Jurisdicción Especial para la Paz (JEP) y la Comisión de la Verdad transformaron el paradigma tradicional de la justicia penal en el mundo: de una justicia punitiva basada en el castigo carcelario hacia una justicia restaurativa centrada en el alivio a las víctimas y la verdad incondicional.",
+    stats: [
+      { label: "Comparecientes JEP", value: "13.400+", desc: "Exguerrilleros, militares y terceros" },
+      { label: "Macrocasos Abiertos", value: "11", desc: "Investigaciones estructurales de crímenes" },
+      { label: "Aportes a la Verdad", value: "98%", desc: "Reconocimientos de responsabilidad" }
+    ],
+    sections: [
+      {
+        heading: "1. ¿Qué es la justicia restaurativa y por qué genera debate?",
+        content: `A diferencia de los tribunales ordinarios, el modelo de la JEP condiciona los beneficios jurídicos a tres exigencias irrenunciables: decir la verdad completa y exhaustiva, reconocer la responsabilidad personal e institucional en los crímenes de guerra y lesa humanidad, y aportar trabajos, obras y actividades con contenido reparador (TOAR).
+
+A lo largo de estos diez años, macrocasos emblemáticos como el Macrocaso 01 (Secuestro y toma de rehenes por las FARC) y el Macrocaso 03 (Muertes ilegítimamente presentadas como bajas en combate - Falsos Positivos) arrojaron revelaciones históricas que cambiaron la comprensión del conflicto nacional.`
+      },
+      {
+        heading: "2. La precisión semántica del periodismo: El valor del idioma",
+        content: `Para el periodismo responsable, el lenguaje no es neutro. Nuestro medio, 'La Trinidad Periodística y el Idioma', pone de relieve la importancia ética de utilizar los términos correctos: no es lo mismo 'retenciones' que 'secuestros'; no es lo mismo 'bajas operacionales' que 'ejecuciones extrajudiciales'. 
+
+Nombrar con rigor las conductas tipificadas por el Derecho Internacional Humanitario permite que la opinión pública comprenda la magnitud del daño sin caer en la revictimización ni en la polarización estéril.`
+      },
+      {
+        heading: "3. Sanciones propias y no repetición",
+        content: `Las primeras sentencias con sanciones propias han involucrado labores de desminado humanitario, construcción de infraestructura en escuelas rurales y reforestación de cuencas hidrográficas afectadas por la guerra, sentando un precedente mundial en derecho transicional.`
+      }
+    ],
+    multimedia: {
+      type: "videoDocumentary",
+      title: "Microdocumental: 'El Espejo de la Verdad'",
+      description: "Análisis audiovisual sobre las audiencias de reconocimiento, la contrastación de pruebas y los testimonios de reconciliación en la JEP.",
+      duration: "8:20 min",
+      videoPlaceholder: "Documental Audiovisual JEP & Paz (HD)"
+    },
+    quote: {
+      text: "La verdad no es para humillar al vencido ni para vanagloriar al vencedor; la verdad es el único cimiento sobre el cual un pueblo herido puede reconstruir su futuro sin miedo.",
+      author: "Comisionado de la Verdad",
+      role: "Informe Final de Esclarecimiento Histórico"
+    },
+    sources: [
+      "Autos y Resoluciones de Conclusiones de la Jurisdicción Especial para la Paz (JEP) 2018-2026.",
+      "Informe Final de la Comisión para el Esclarecimiento de la Verdad, la Convivencia y la No Repetición (CEV).",
+      "Unidad de Búsqueda de Personas dadas por Desaparecidas (UBPD)."
+    ]
+  },
+  {
+    id: "informe-4",
+    slug: "reforma-rural-integral-y-futuro-paz-2026",
+    number: "Informe 04",
+    category: "Propuestas & Futuro",
+    categoryColor: "crimson",
+    title: "La Tierra Prometida: Desafíos de la Reforma Rural Integral y el horizonte de paz 2026-2030",
+    subtitle: "Propuestas, iniciativas de la sociedad civil y soluciones concretas para acelerar el desarrollo del campo colombiano.",
+    author: "Mesa de Innovación y Políticas Públicas - La Trinidad Periodística",
+    date: "Octubre de 2026",
+    readTime: "8 min de lectura",
+    coverImage: "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=1200&q=80",
+    coverCaption: "Campos agrícolas tecnificados y comunidades campesinas en restitución de tierras. Foto: Banco Agrario / Archivo Abierto.",
+    lead: "Si el origen del conflicto armado en Colombia estuvo ligado a la inequidad en la tenencia de la tierra, la consolidación definitiva de la paz depende de hacer del campo un motor de prosperidad, tecnología y justicia social para las próximas generaciones.",
+    stats: [
+      { label: "Municipios PDET", value: "170", desc: "Zonas priorizadas por alta vulnerabilidad" },
+      { label: "Fondo de Tierras", value: "3.2M Ha", desc: "Ingresadas para redistribución pacífica" },
+      { label: "Vías Terciarias", value: "+8.500 km", desc: "Conectividad rural ejecutada" }
+    ],
+    sections: [
+      {
+        heading: "1. Las cuatro columnas de la solución al agro colombiano",
+        content: `Para culminar la implementación de los acuerdos hacia 2031, expertos y líderes gremiales coinciden en cuatro pilares urgentes:
+1. Formalización y Catastro Multipropósito: Otorgar títulos de propiedad claros para que las familias campesinas tengan seguridad jurídica y acceso al crédito formal.
+2. Infraestructura y Bienes Públicos: Construcción de vías terciarias, distritos de riego, electrificación rural y conectividad digital para evitar que las cosechas se pierdan en el fango.
+3. Transición Agroecológica y Sustitución Sostenible: Garantizar alternativas comerciales rentables frente a la economía de la hoja de coca mediante cadenas de valor en cacao, café especial y frutas tropicales.
+4. Educación y Salud Rural de Calidad: Frenar el éxodo de jóvenes rurales ofreciendo formación técnica, tecnológica y universitaria en el territorio.`
+      },
+      {
+        heading: "2. El rol de la juventud y el periodismo comunitario",
+        content: `Las nuevas generaciones rurales están apropiándose de las tecnologías de la información para visibilizar sus productos, fiscalizar los recursos de los PDET y contar sus propias historias sin intermediarios. La Trinidad Periodística respalda este movimiento mediante talleres de alfabetización digital y pedagogía para la paz.`
+      },
+      {
+        heading: "3. Hacia el 2030: El pacto que no podemos romper",
+        content: `La paz no culmina en un periodo de gobierno; es una política de Estado consagrada constitucionalmente. Cumplir lo pactado es el pasaporte de Colombia para ingresar a una era de estabilidad democrática y desarrollo sostenible.`
+      }
+    ],
+    multimedia: {
+      type: "interactiveMap",
+      title: "Matriz de Soluciones: 4 Pilares Estratégicos para el Campo (2026-2030)",
+      pillars: [
+        { title: "Seguridad Jurídica de Tierras", desc: "Completar la titulación del 100% del Fondo de Tierras con enfoque de género.", icon: "CheckCircle" },
+        { title: "Conectividad & Vías Campesinas", desc: "Inversión prioritaria en vías terciarias y acceso universal a internet rural.", icon: "Globe" },
+        { title: "Soberanía Alimentaria", desc: "Créditos blandos con tasas de fomento y seguros climáticos para pequeños productores.", icon: "TrendingUp" },
+        { title: "Pedagogía y Convivencia", desc: "Inclusión de cátedra de paz y memoria en el 100% de instituciones educativas oficiales.", icon: "BookOpen" }
+      ]
+    },
+    quote: {
+      text: "Darle tierra y tecnología al campesino no es caridad: es la inversión de seguridad nacional más rentable y justa que Colombia puede hacer.",
+      author: "Comité de Concertación Agraria",
+      role: "Manifiesto Nacional por la Tierra y la Paz"
+    },
+    sources: [
+      "Agencia Nacional de Tierras (ANT) - Informes de gestión 2026.",
+      "Agencia de Renovación del Territorio (ART) - Balance PDET.",
+      "Departamento Nacional de Planeación (DNP) - CONPES de Paz.",
+      "FAO Colombia - Organización de las Naciones Unidas para la Alimentación y la Agricultura."
+    ]
+  }
+];
+
+export const editorialMembers = [
+  {
+    name: "Dirección Editorial & Coordinación General",
+    role: "Liderazgo de Contenidos y Convergencia",
+    task: "Responsable de la línea editorial, supervisión periodística, coherencia semántica sobre el Acuerdo de Paz 2016-2026 y arquitectura web en Next.js.",
+    badge: "Dirección"
+  },
+  {
+    name: "Edición Multimedia & Recursos Audiovisuales",
+    role: "Producción Interactiva y Datos",
+    task: "Diseño y montaje de infografías de datos Kroc/JEP, podcast testimonial, microdocumental y curaduría fotográfica con licencias abiertas.",
+    badge: "Multimedia"
+  },
+  {
+    name: "Redacción de Investigaciones & Fuentes",
+    role: "Periodismo de Profundidad",
+    task: "Investigación, contraste de informes oficiales (Kroc, JEP, ARN, ANT) y redacción convergente de los 4 informes de profundidad.",
+    badge: "Investigación"
+  },
+  {
+    name: "Estrategia de Social Media & Difusión",
+    role: "Gestión de Redes y Métricas",
+    task: "Planificación, diseño y publicación de las 9 piezas en Instagram y Facebook durante los 3 días de difusión programada.",
+    badge: "Social Media"
+  }
+];
