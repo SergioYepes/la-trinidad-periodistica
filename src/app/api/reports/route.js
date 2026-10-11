@@ -1,38 +1,19 @@
 import { NextResponse } from 'next/server';
-import fs from 'fs';
-import path from 'path';
+import { getReports, addReport, deleteReport } from '../../../lib/db';
 
-const dataFilePath = path.join(process.cwd(), 'src', 'data', 'activeReports.json');
+export const dynamic = 'force-dynamic';
 
-function getReportsFromFile() {
-  try {
-    if (fs.existsSync(dataFilePath)) {
-      const fileData = fs.readFileSync(dataFilePath, 'utf8');
-      return JSON.parse(fileData);
-    }
-  } catch (error) {
-    console.error('Error reading reports file:', error);
-  }
-  return [];
-}
-
-function saveReportsToFile(reports) {
-  try {
-    fs.writeFileSync(dataFilePath, JSON.stringify(reports, null, 2), 'utf8');
-    return true;
-  } catch (error) {
-    console.error('Error writing reports file:', error);
-    return false;
-  }
-}
-
-// GET /api/reports -> returns shared list of all reports
+// GET /api/reports -> returns shared list of all reports (from Neon or local)
 export async function GET() {
-  const reports = getReportsFromFile();
-  return NextResponse.json({ success: true, reports });
+  try {
+    const reports = await getReports();
+    return NextResponse.json({ success: true, reports });
+  } catch (error) {
+    return NextResponse.json({ success: false, error: error.message }, { status: 500 });
+  }
 }
 
-// POST /api/reports -> adds a new report to the shared JSON file
+// POST /api/reports -> adds a new report to Neon (or local)
 export async function POST(request) {
   try {
     const body = await request.json();
@@ -40,10 +21,7 @@ export async function POST(request) {
       return NextResponse.json({ success: false, error: 'Título requerido' }, { status: 400 });
     }
 
-    const currentReports = getReportsFromFile();
-    const updatedReports = [body, ...currentReports];
-    saveReportsToFile(updatedReports);
-
+    const updatedReports = await addReport(body);
     return NextResponse.json({ success: true, reports: updatedReports });
   } catch (error) {
     return NextResponse.json({ success: false, error: error.message }, { status: 500 });
@@ -60,10 +38,7 @@ export async function DELETE(request) {
       return NextResponse.json({ success: false, error: 'ID requerido' }, { status: 400 });
     }
 
-    const currentReports = getReportsFromFile();
-    const updatedReports = currentReports.filter(r => r.id !== idToDelete);
-    saveReportsToFile(updatedReports);
-
+    const updatedReports = await deleteReport(idToDelete);
     return NextResponse.json({ success: true, reports: updatedReports });
   } catch (error) {
     return NextResponse.json({ success: false, error: error.message }, { status: 500 });
